@@ -1,20 +1,24 @@
 package ar.edu.untref.dyasc;
 
+import java.util.Scanner;
+
 public class Ejecutable {
     public static void main(String[] args) {
-        if (args.length != 1) {
-            System.out.println("Por favor, proporcione exactamente un argumento: el número de iteraciones.");
-            return;
-        }
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el número de iteraciones para la secuencia de Fibonacci: ");
         try {
-            int iteraciones = Integer.parseInt(args[0]);
+            int iteraciones = scanner.nextInt();
+
             Fibonacci fibonacci = new Fibonacci();
             String resultado = fibonacci.calcularFibonacci(iteraciones);
             System.out.println(resultado);
         } catch (NumberFormatException e) {
-            System.out.println("El argumento proporcionado no es un número válido.");
+            System.out.println("El valor ingresado no es un número válido.");
         } catch (Exception e) {
             System.out.println(e.getMessage());
+        } finally {
+            scanner.close();
         }
     }
 }
