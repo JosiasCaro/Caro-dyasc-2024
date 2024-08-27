@@ -37,4 +37,4 @@ jobs:
 
     - name: Run tests
       run: |
-        java -cp "bin:junit.jar:hamcrest.jar:assertj-core.jar" org.junit.runner.JUnitCore ar.edu.untref.dyasc.FibonacciAppTest
+        java -cp "bin:junit.jar:hamcrest.jar:assertj-core.jar" org.junit.runner.JUnitCore ar.edu.untref.dyasc.EjemploTest
