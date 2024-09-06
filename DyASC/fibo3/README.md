@@ -25,7 +25,7 @@ java -jar fibo.jar 1
 
 ## Decisiones de la trata de excepciones para fibo3':'
 
-### Por falta de tiempo y por no consultar sobre que deberia hacer, si en el parametro -f="xxxxxx" no pude tomar como parte del string el tipo de archivo donde se escribe la secuencia de fibonacci y con respecto a -m si la opcion no es valida no importara y se ejecutara por default -o=hd con la longitud indicada de la secuencia de fibonacci'.'
+### Por falta de tiempo y por no consultar sobre que deberia hacer, si en el parametro -f="xxxxxx" no pude tomar como parte del string el tipo de archivo donde se escribe la secuencia de fibonacci'.'
 
 ## Decisiones de las pruebas':'
 

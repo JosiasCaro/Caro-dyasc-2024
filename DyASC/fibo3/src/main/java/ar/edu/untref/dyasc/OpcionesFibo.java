@@ -35,6 +35,10 @@ public class OpcionesFibo {
                 comprobarParametrosDireccion(orientacion, direccion);
             }
             if (argumento.startsWith("-m=")) {
+                String modo = String.valueOf(argumento.charAt(3));
+                if (!(modo.contains("s") || modo.contains("l"))) {
+                    throw new Error("Opciones no validas.");
+                }
                 this.modo = argumento.substring(3);
             }
             if (argumento.startsWith("-f=")) {
