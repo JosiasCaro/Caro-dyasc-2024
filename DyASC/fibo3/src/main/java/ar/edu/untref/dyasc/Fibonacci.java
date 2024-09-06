@@ -4,6 +4,7 @@ public class Fibonacci {
 
     private int[] fib;
 
+    //Genera la serie de Fibonacci
     public int[] calcularFibonacci(int iteraciones) {
         if( iteraciones < 0) {
             throw new Error("No puede realizarse el calulo de un numero menor a 0");
